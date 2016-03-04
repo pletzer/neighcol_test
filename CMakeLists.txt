@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 2.8)
+project(neighcol)
+find_package(MPI REQUIRED)
+set(CMAKE_CXX_COMPILER ${MPI_CXX_COMPILER})
+add_executable(test0 test0.cxx)
