@@ -10,4 +10,5 @@ set(SRC_FILES
 add_library(neighcol STATIC ${SRC_FILES})
 
 add_executable(test0 test0.cxx)
+add_executable(test1 test1.cxx)
 
