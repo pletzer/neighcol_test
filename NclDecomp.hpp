@@ -22,6 +22,10 @@ setDecomposition(const std::vector<int>& domDims);
 int
 getProcId(const std::vector<int>& domInds);
 
+int
+getProcId(const std::vector<int>& domInds,
+	      const std::vector<int>& offInds);
+
 private:
     std::vector<int> mDomDims;
     std::vector<int> mProdDims;

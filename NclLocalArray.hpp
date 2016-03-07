@@ -16,7 +16,6 @@ NclLocalArray();
 
 ~NclLocalArray();
 
-
 void 
 setDimensions(const std::vector<size_t>& dims);
 

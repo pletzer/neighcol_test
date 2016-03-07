@@ -25,3 +25,13 @@ NclDecomp::getProcId(const std::vector<int>& domInds) {
     }
     return res;
 }
+
+int
+NclDecomp::getProcId(const std::vector<int>& domInds, 
+                     const std::vector<int>& offInds) {
+    int res = 0;
+    for (size_t i = 0; i < mNumDims; ++i) {
+        res += mProdDims[i] * ((domInds[i] + offInds[i]) % mDomDims[i]);
+    }
+    return res;
+}
